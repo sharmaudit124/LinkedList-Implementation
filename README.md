@@ -1,5 +1,6 @@
 # Singly-LinkedList-Implementation ✔
-Here is a Java implementation of a <strong>Singly linked list</strong>. So you can see how the real functions of a linked list work.<br>
+Here is a Java implementation of a <strong>Singly linked list</strong>. So you can see how the real functions of a linked list work.<br><br>
+<img alt="Singly Linked List" width="500" src="https://www.codesdope.com/staticroot/images/ds/link18.gif"> <br>
  <h3>Below are the following functions:👀</h3><hr>
   🧵 To insert a value at last. <br>
   🧵 To insert a value at some given index. <br>
