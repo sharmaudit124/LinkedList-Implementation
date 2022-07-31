@@ -11,5 +11,6 @@ Here is a Java implementation of a <strong>Singly linked list</strong>. So you c
   🧵 To find center of a Linked list. <br>
   🧵 To get a whole node of a particular index. <br>
   🧵 To check the presence of an element in Linked List. <br>
+  🧵 Iterator to iterate. <br>
   <br><hr>
   You too can <stromg>Contribute</strong> 🧠
