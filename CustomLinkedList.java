@@ -3,13 +3,17 @@ package myLinkedList;
 
 import java.util.Iterator;
 import java.util.Objects;
-
+/*
+* This class contains the custom functions/implementation.
+*/
 public class CustomLinkedList<E> implements Iterable<E> {
     private Node<E> head;
     private Node<E> tail;
     private int size;
 
-
+/*
+* To insert a value at last
+*/
     public void Insert(E value) {
         Node<E> temp = new Node<>();
         temp.data = value;
@@ -24,7 +28,9 @@ public class CustomLinkedList<E> implements Iterable<E> {
 
         size++;
     }
-
+/*
+* To insert a value at some given index
+*/
     public void InsertAt(int index, E value) {
         if (index < 0 || index > size) {
             System.out.println("Invalid Arguments");
@@ -69,7 +75,9 @@ public class CustomLinkedList<E> implements Iterable<E> {
             size++;
         }
     }
-
+/*
+* To traverse in Singly Linked List.
+*/
     public void Traverse() {
         Node<E> temp = head;
         while (temp != null) {
@@ -78,11 +86,17 @@ public class CustomLinkedList<E> implements Iterable<E> {
         }
         System.out.println();
     }
-
+    
+/*
+* To get size of singly linked list.
+*/
     public int Size() {
         return size;
     }
-
+    
+/*
+* To delete last Node
+*/
     public void Delete() {
         if (size == 0) {
             System.out.println("Linked List is Empty");
@@ -100,6 +114,10 @@ public class CustomLinkedList<E> implements Iterable<E> {
         }
     }
 
+    
+/*
+* To delete any node at a given index.
+*/    
     public void DeleteAt(int index) {
 
         if (index < 0 || index > size) {
@@ -123,6 +141,10 @@ public class CustomLinkedList<E> implements Iterable<E> {
         }
     }
 
+    
+/*
+* To find center of a Linked list.
+*/
     public E Center() {
         Node<E> slow = head;
         Node<E> fast = head;
@@ -135,6 +157,9 @@ public class CustomLinkedList<E> implements Iterable<E> {
         return slow.data;
     }
 
+/*
+* To get a whole node of a particular index.
+*/
     private Node<E> getNodeAt(int index) {
         Node temp = head;
         for (int i = 0; i < index; i++) {
@@ -143,6 +168,9 @@ public class CustomLinkedList<E> implements Iterable<E> {
         return temp;
     }
 
+ /*
+* To check presence of Any element in Linked List
+*/
     public boolean contains(E item) {
         boolean checker = false;
         if (head == null) System.out.println("List is Empty");
@@ -157,6 +185,9 @@ public class CustomLinkedList<E> implements Iterable<E> {
         return checker;
     }
 
+ /*
+* To reverse your list.
+*/
     public void Reverse() {
         int li = 0;
         int ri = size - 1;
@@ -174,6 +205,9 @@ public class CustomLinkedList<E> implements Iterable<E> {
         }
     }
 
+ /*
+* To get Mid-Node of Linked List.
+*/
     private Node midNode(Node head, Node tail) {
         Node f = head;
         Node s = head;
