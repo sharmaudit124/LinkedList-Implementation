@@ -2,7 +2,9 @@ package myLinkedList;
 
 
 import java.util.Iterator;
-
+/*
+* This is a Iterator class.
+*/
 class LinkedListIterator<E> implements Iterator<E> {
     Node<E> current;
 
